@@ -6,6 +6,8 @@
     --dark-color: #1f1f1f;
     --dark-color2: #1c1c1c;
     --dark-color3: #232323;
+    --dark-color4: #262626;
+    --border-color: #ffffff32;
     --heading-font: "Ubuntu", sans-serif;
     --sub-font: "Nunito Sans", sans-serif;
     --animation: all ease-in .3s;
@@ -20,7 +22,7 @@ body {
 /* Navbar */
 .nav-background {
     background-color: var(--dark-color2);
-    border: 1px solid #ffffff32;
+    border: 1px solid var(--border-color);
     bottom: 50%;
     transform: translateY(50%);
 }
@@ -113,7 +115,7 @@ body {
 
 .header-content .work-btn:hover {
     transform: translateY(-5px);
-    box-shadow: 1px 10px 20px #ffffff32;
+    box-shadow: 1px 10px 20px var(--border-color);
 }
 
 .header-content .get-btn {
@@ -157,7 +159,7 @@ body {
     background-color: var(--white-color);
     color: var(--dark-color);
     transform: translateY(-5px);
-    box-shadow: 1px 10px 20px #ffffff32;
+    box-shadow: 1px 10px 20px var(--border-color);
 }
 
 /* Header images section */
@@ -187,6 +189,37 @@ body {
     border-radius: 20px;
     box-shadow: 15px 15px 0 #ececec1d;
 }
+
+/* Left container of about section */
+.about-left .a-l-content {
+    background-color: var(--dark-color4);
+    padding: 50px;
+    border: 1px solid var(--border-color);
+}
+
+.about-left .a-l-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10px;
+    right: 10px;
+    height: 5px;
+    background-color: var(--gray-color);
+}
+
+.about-left img {
+    width: 400px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

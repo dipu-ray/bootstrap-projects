@@ -134,34 +134,42 @@
     </header>
 
     <main>
+        <!-- About Section -->
         <section class="about-section">
             <div class="container me-0">
-                <div class="row">
+                <div class="row d-flex gap-5">
                     <!-- Left container of about section -->
-                    <div class="col about-left">
+                    <div class="col-5 about-left">
                         <div class="a-l-content rounded-5 position-relative">
                             <div class="a-l-profile text-center">
-                                <img src="assets/images/profile-2.png" alt="A Man">
-                                <h2>Marcus Thompson</h2>
-                                <h4>Creative Director & Developer</h4>
+                                <!-- Image -->
+                                <div class="img position-relative">
+                                    <img class="rounded-circle border border-white border-5"
+                                        src="assets/images/profile-2.png" alt="A Man">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                                <h2 class="fs-4 fw-bold mt-4">Marcus Thompson</h2>
+                                <h4 class="fs-6">Creative Director & Developer</h4>
                             </div>
-                            <div class="about-cards">
-                                <div class="cards">
-                                    <a href="mailto:marcus@example.com">
+
+                            <!-- About Cards -->
+                            <div class="about-cards d-flex flex-column gap-4 mt-5">
+                                <div class="cards px-3 py-3 rounded-4 fw-semibold">
+                                    <a class="text-decoration-none text-white" href="mailto:marcus@example.com">
                                         <i class="fa-solid fa-envelope"></i>
                                         marcus@example.com
                                     </a>
                                 </div>
 
-                                <div class="cards">
-                                    <a href="tel:+15551234567">
+                                <div class="cards px-3 py-3 rounded-4 fw-semibold">
+                                    <a class="text-decoration-none text-white" href="tel:+15551234567">
                                         <i class="fa-solid fa-phone"></i>
                                         +1 (555) 123-4567
                                     </a>
                                 </div>
 
-                                <div class="cards">
-                                    <a href="#x">
+                                <div class="cards px-3 py-3 rounded-4 fw-semibold">
+                                    <a class="text-decoration-none text-white" href="#x">
                                         <i class="fa-solid fa-location-dot"></i>
                                         San Francisco, CA
                                     </a>
@@ -171,7 +179,7 @@
                     </div>
 
                     <!-- Right container of about section -->
-                    <div class="col about-right">
+                    <div class="col-6 about-right">
                         <div class="short-intro">
                             Get to Know Me
                         </div>

@@ -7,6 +7,7 @@
     --dark-color2: #1c1c1c;
     --dark-color3: #232323;
     --dark-color4: #262626;
+    --dark-color5: #212121;
     --border-color: #ffffff32;
     --heading-font: "Ubuntu", sans-serif;
     --sub-font: "Nunito Sans", sans-serif;
@@ -190,6 +191,11 @@ body {
     box-shadow: 15px 15px 0 #ececec1d;
 }
 
+/* About Section */
+.about-section {
+    margin: 150px auto;
+}
+
 /* Left container of about section */
 .about-left .a-l-content {
     background-color: var(--dark-color4);
@@ -201,16 +207,51 @@ body {
     content: "";
     position: absolute;
     top: 0;
-    left: 10px;
-    right: 10px;
+    left: 20px;
+    right: 20px;
     height: 5px;
-    background-color: var(--gray-color);
+    background-color: var(--gray-color3);
+    border-radius: 20px 20px 0 0;
 }
 
-.about-left img {
-    width: 400px;
+/* Image */
+.a-l-profile .img img {
+    width: 150px;
 }
 
+.a-l-profile .img i {
+    color: var(--dark-color);
+    background-color: var(--gray-color3);
+    font-size: .9rem;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--dark-color);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 12%;
+    right: 35%;
+}
+
+/* About Cards */
+.about-cards .cards {
+    background-color: var(--dark-color5);
+    border: 1px solid #ffffff14;
+    transition: var(--animation2);
+}
+
+.about-cards .cards:hover {
+    transform: translateY(-5px);
+    box-shadow: 1px 10px 20px var(--border-color);
+    cursor: pointer;
+    background-color: var(--gray-color3);
+}
+
+.about-cards .cards:hover a {
+    color: var(--dark-color2) !important;
+}
 
 
 
